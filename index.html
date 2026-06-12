@@ -12,5 +12,18 @@
      <h2>Buraco do Padre</h2>
      <p>Um excelente ponto turistico em Ponta Grossa</p>
     </div>
+    <div class="card desligar" id="card2">
+        <img src="" alt="">
+    </div>
+    <script>
+        cartao1 = document.getElementById("card1");
+        cartao2 = document.getElementById("card2");
+        botao = document.getElementById("botao");
+
+        botao.addEventListener("clcik", ()=>{
+            cartao1.classList.toggle("desligar");
+            cartao2.classList.toggle("desligar")
+        })
+    </script>
 </body>
 </html>
