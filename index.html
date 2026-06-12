@@ -7,23 +7,33 @@
     <title>Cards Toggle</title>
 </head>
 <body>
-    <div class="card">
+    <center>
+    <h1 id="titulo">Maravilhas do Paraná</h1>
+    <div clas="card" id="card1">
      <img src="https://toptripadventure.com.br/wp-content/uploads/2020/01/pontaGrossa.jpg" alt="">
      <h2>Buraco do Padre</h2>
-     <p>Um excelente ponto turistico em Ponta Grossa</p>
+     <p>Um excelente ponto turistico em Ponta Grossa - PR</p>
     </div>
     <div class="card desligar" id="card2">
-        <img src="" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7gvGpsEoXRs_zPGKK-hnvo9palYgVAwL8Mg&s" alt="">
+        <h2>Cataratas do Iguaçu</h2>
+        <p>Um excelente ponto turistico em Foz do Iguaçu - PR</p>
     </div>
     <script>
+
         cartao1 = document.getElementById("card1");
         cartao2 = document.getElementById("card2");
-        botao = document.getElementById("botao");
-
-        botao.addEventListener("clcik", ()=>{
+    
+            cartao1.addEventListener("click", ()=>{
             cartao1.classList.toggle("desligar");
-            cartao2.classList.toggle("desligar")
+            cartao2.classList.toggle("desligar");
+        })    
+            cartao2.addEventListener("click", ()=>{
+            cartao1.classList.toggle("desligar");
+            cartao2.classList.toggle("desligar");
         })
-    </script>
+
+</script>
+</center>
 </body>
 </html>
